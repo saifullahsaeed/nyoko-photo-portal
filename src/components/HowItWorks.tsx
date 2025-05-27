@@ -28,13 +28,13 @@ const HowItWorks = () => {
   ];
 
   return (
-    <section id="how-it-works" className="py-20 bg-gray-50">
+    <section id="how-it-works" className="py-20 bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
             How It Works
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Getting the perfect photographer for your needs is simple with our streamlined process
           </p>
         </div>
@@ -43,17 +43,17 @@ const HowItWorks = () => {
           {steps.map((step, index) => (
             <div key={index} className="text-center group">
               <div className="relative mb-6">
-                <div className="w-20 h-20 bg-black text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto group-hover:bg-gray-800 transition-colors duration-300">
+                <div className="w-20 h-20 bg-white text-black rounded-full flex items-center justify-center text-2xl font-bold mx-auto group-hover:bg-gray-200 transition-colors duration-300">
                   {step.step}
                 </div>
                 <div className="absolute -top-2 -right-2 text-3xl">
                   {step.icon}
                 </div>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+              <h3 className="text-xl font-semibold text-white mb-3">
                 {step.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-300 leading-relaxed">
                 {step.description}
               </p>
             </div>
