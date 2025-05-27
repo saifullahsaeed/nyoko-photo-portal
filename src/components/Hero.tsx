@@ -1,4 +1,6 @@
 
+import { Link } from 'react-router-dom';
+
 const Hero = () => {
   return (
     <section className="pt-24 pb-12 bg-gradient-to-br from-gray-900 to-black">
@@ -14,9 +16,11 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="bg-white text-black px-8 py-4 rounded-full text-lg font-medium hover:bg-gray-200 transition-all duration-300 transform hover:scale-105 shadow-lg">
-              Request a Quote
-            </button>
+            <Link to="/quote-request">
+              <button className="bg-white text-black px-8 py-4 rounded-full text-lg font-medium hover:bg-gray-200 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                Request a Quote
+              </button>
+            </Link>
             <button className="border border-gray-600 text-gray-300 px-8 py-4 rounded-full text-lg font-medium hover:bg-gray-800 transition-all duration-300 transform hover:scale-105">
               Explore Photographers
             </button>

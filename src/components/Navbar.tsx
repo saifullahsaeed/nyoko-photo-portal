@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,7 +12,9 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-white">Nyoko</h1>
+            <Link to="/">
+              <h1 className="text-2xl font-bold text-white">Nyoko</h1>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
@@ -23,9 +26,11 @@ const Navbar = () => {
               <a href="#how-it-works" className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors">
                 How It Works
               </a>
-              <a href="#quote" className="bg-white text-black px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-200 transition-colors">
-                Request a Quote
-              </a>
+              <Link to="/quote-request">
+                <button className="bg-white text-black px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-200 transition-colors">
+                  Request a Quote
+                </button>
+              </Link>
             </div>
           </div>
 
@@ -50,9 +55,11 @@ const Navbar = () => {
               <a href="#how-it-works" className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium">
                 How It Works
               </a>
-              <a href="#quote" className="bg-white text-black block px-6 py-2 rounded-full text-base font-medium hover:bg-gray-200 transition-colors text-center mx-3 mt-4">
-                Request a Quote
-              </a>
+              <Link to="/quote-request">
+                <button className="bg-white text-black block px-6 py-2 rounded-full text-base font-medium hover:bg-gray-200 transition-colors text-center mx-3 mt-4 w-full">
+                  Request a Quote
+                </button>
+              </Link>
             </div>
           </div>
         )}
