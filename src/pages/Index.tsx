@@ -1,7 +1,7 @@
 
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
-import PhotoShowcase from '../components/PhotoShowcase';
+import PhotoGallery from '../components/PhotoGallery';
 import HowItWorks from '../components/HowItWorks';
 import Features from '../components/Features';
 import Footer from '../components/Footer';
@@ -11,7 +11,7 @@ const Index = () => {
     <div className="min-h-screen bg-black">
       <Navbar />
       <Hero />
-      <PhotoShowcase />
+      <PhotoGallery />
       <HowItWorks />
       <Features />
       <Footer />
